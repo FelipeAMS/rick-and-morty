@@ -5,16 +5,18 @@ export const FavoritesContext = React.createContext()
 export const FavoritesProvider = ({ children }) => {
     const [favorites, setFavorites] = useState([])
 
-    const toggleFavorite = (id) => {
-        setFavorites((prevFavorites) =>
-                prevFavorites.includes(id)
-                ? prevFavorites.filter(fav => fav !== id)
-                : [...prevFavorites, id]
-            )
+    const addFavorite = (character) => {
+        if (!favorites.find(fav => fav.id === character.id)) {
+            setFavorites([...favorites, character])
+        }
+    }
+
+    const removeFavorite = (id) => {
+        setFavorites(favorites.filter(fav => fav.id !== id))
     }
 
     return (
-        <FavoritesContext.Provider value={{ favorites, toggleFavorite }}>
+        <FavoritesContext.Provider value={{ favorites, addFavorite, removeFavorite }}>
             {children}
         </FavoritesContext.Provider>
     )

@@ -10,7 +10,7 @@ import styles from "./CharacterDetail.module.css";
 
 const CharacterDetail = () => {
     const { id } = useParams();
-    const { favorites = [], toggleFavorite } = useContext(FavoritesContext);
+    const { favorites, addFavorite, removeFavorite } = useContext(FavoritesContext);
     const [character, setCharacter] = useState(null);
 
     useEffect(() => {
@@ -21,7 +21,7 @@ const CharacterDetail = () => {
 
     if (!character) return <p>Loading...</p>;
 
-    const isFavorited = favorites.includes(character.id);
+    const isFavorite = favorites.some(fav => fav.id ===character.id)
 
     return (
         <Fragment>
@@ -35,11 +35,13 @@ const CharacterDetail = () => {
 
                 <div
                     className={styles.heartContainer}
-                    onClick={() => toggleFavorite(character.id)}
+                    onClick={() => {
+                        isFavorite ? removeFavorite(character.id) : addFavorite(character)
+                    }}
                 >
                     <FontAwesomeIcon
-                        icon={isFavorited ? solidHeart : regularHeart}
-                        className={isFavorited ? styles.favorited : styles.heart}
+                        icon={isFavorite ? solidHeart : regularHeart}
+                        className={isFavorite ? styles.favorited : styles.heart}
                     />
                 </div>
             </div>
