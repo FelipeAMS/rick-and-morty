@@ -5,9 +5,10 @@
   justify-content: space-between;
   border-radius: 12px;
   overflow: hidden;
-  background-color: #ffffff;
+  background-color: #171a21;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
 }
 
 .card:hover {
@@ -24,7 +25,7 @@
 .card h2 {
   font-size: 18px;
   font-weight: 600;
-  color: #333;
+  color: white;
   margin: 12px 0;
   text-align: center;
 }

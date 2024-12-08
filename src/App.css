@@ -1,0 +1,20 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto", sans-serif;
+}
+
+html {
+    min-height: 100%;
+    position: relative;
+    background-color: #2a475e;
+}
+
+body {
+    margin-bottom: 120px;
+    background-color: #2a475e;
+}
+
+a{
+    text-decoration: none;
+}
