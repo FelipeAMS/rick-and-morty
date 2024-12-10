@@ -1,10 +1,14 @@
-footer {
+.footer {
     background-color: #171a21;
-    padding: 40px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    position: absolute; 
+    bottom: 0;
+    width: 100%;
 }
 
-footer p {
-    color: white;
-    font-size: 26px;
-    text-align: center;
+.footer p {
+    margin: 0;
 }

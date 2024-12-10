@@ -1,6 +1,6 @@
 import React, { Fragment, useState } from "react"
 import Header from "../../components/header/Header"
-import Footer from "../../components/footer/footer"
+import Footer from "../../components/footer/Footer"
 import styles from "./Contact.module.css"
 
 const Contact = () => {
@@ -33,7 +33,7 @@ const Contact = () => {
         <Fragment>
             <Header />
             <div className={styles.container}>
-                <h2>Formulario de Contacto</h2>
+                <h2>Contact Form</h2>
                 <form className={styles.form} onSubmit={handleSubmit}>
                     <div className={styles.formGroup}>
                         <label htmlFor="name">Name: </label>
@@ -67,9 +67,9 @@ const Contact = () => {
                             required
                         />
                     </div>
-                    <button className={styles.submitButton} type="submit">Submit</button>
+                    <button name="submit" className={styles.submitButton} type="submit">Submit</button>
                     {submittedMessage && (
-                        <p className={styles.successMessage}>{submittedMessage}</p>
+                        <p name="succes" className={styles.successMessage}>{submittedMessage}</p>
                     )}
                 </form>
             </div>
