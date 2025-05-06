@@ -8,7 +8,6 @@ const Header = () => {
         <ul className={styles.headerList}>
             <li><Link to={'/'} ><img src="../../../public/images/Rick-and-Morty.png" alt="" /></Link></li>
             <li><Link className={styles.headerLink} to={'/product'} >Products</Link></li>
-            <li><Link className={styles.headerLink} to={'/contact'} >Contact</Link></li>
             <li><Link className={styles.headerLink} to={'/favorites'} >Favorites</Link></li>
         </ul>
         </header>

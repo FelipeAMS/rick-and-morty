@@ -24,9 +24,6 @@ const Home = () => {
                         <button className={styles.button} onClick={() => window.location.href = '/product'}>
                             Explore Products
                         </button>
-                        <button className={styles.button} onClick={() => window.location.href = '/contact'}>
-                            Contact
-                        </button>
                     </div>
                 </div>
             </main>
