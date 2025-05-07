@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../header/Header';
 import Footer from '../footer/Footer';
 import styles from './Home.module.css';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
@@ -16,13 +17,15 @@ const Home = () => {
                     <div className={styles.imageContainer}>
                         <img
                             className={styles.mainImage}
-                            src="../../../public\images\rick-and-morty.jpeg"
+                            src="/rick-and-morty/images/rick-and-morty.jpeg"
                             alt="Rick & Morty"
                         />
                     </div>
                     <div className={styles.buttons}>
-                        <button className={styles.button} onClick={() => window.location.href = '/product'}>
-                            Explore Products
+                        <button className={styles.button}>
+                            <Link to="/products" className={styles.buttonLink}>
+                                View Characters
+                            </Link>
                         </button>
                     </div>
                 </div>

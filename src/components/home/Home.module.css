@@ -51,6 +51,11 @@
     justify-content: center;
     gap: 10px;
   }
+
+  .buttonLink {
+    text-decoration: none;
+    color: white;
+  }
   
   .button {
     padding: 10px 20px;
