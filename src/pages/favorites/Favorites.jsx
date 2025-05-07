@@ -2,7 +2,7 @@ import React, { Fragment, useContext } from 'react'
 import styles from "./Favorites.module.css"
 import { FavoritesContext } from "../../context/FavoritesContext"
 import Header from "../../components/header/Header"
-import Footer from "../../components/footer/footer"
+import Footer from "../../components/footer/Footer"
 import CharacterCard from "../../components/characterCard/CharacterCard"
 
 const Favorites = () => {
