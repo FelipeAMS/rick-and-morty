@@ -10,9 +10,9 @@ const Home = () => {
             <Header />
             <main className={styles.main}>
                 <div className={styles.container}>
-                    <h1 className={styles.title}>Welcome to Rick & Morty Store! 🛸</h1>
+                    <h1 className={styles.title}>Welcome to Rick & Morty Webpage! 🛸</h1>
                     <p className={styles.description}>
-                        Explore a variety of products inspired by the famous Rick & Morty series. Buy your favorite characters and join the multiversal adventure!
+                        Explore a variety of characters from the famous Rick & Morty series. Choose your favorite characters and join the multiversal adventure!
                     </p>
                     <div className={styles.imageContainer}>
                         <img
