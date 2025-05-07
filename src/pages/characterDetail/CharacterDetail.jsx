@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart as solidHeart } from "@fortawesome/free-solid-svg-icons";
 import { faHeart as regularHeart } from "@fortawesome/free-regular-svg-icons";
 import Header from "../../components/header/Header"
-import Footer from "../../components/footer/footer"
+import Footer from "../../components/footer/Footer"
 import styles from "./CharacterDetail.module.css";
 
 const CharacterDetail = () => {
